@@ -5,7 +5,10 @@
 
 namespace prep {
 class Matrix {
- public:
+private:
+std::vector< std::vector<int> >data {};
+
+public:
   explicit Matrix(size_t rows = 0, size_t cols = 0);
   explicit Matrix(std::istream& is);
   Matrix(const Matrix& rhs) = default;
